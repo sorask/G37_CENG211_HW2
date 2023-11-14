@@ -1,0 +1,47 @@
+there are 4 types of Climate Measurements:(per unit area)
+
+(measurement is a climate measurement) (inheritance) (base class)
+Temperature
+Wind speed
+Humidity
+Radiation Absorption
+
+-ClimateMeasurement: year, month
+-Temperature: celciusMeasurement, fahrenheitMeasurement, kelvinMeasurement
+-WindSpeed: metersPerSecond, kmPerHour
+-Humidity: humidityPercentage
+-RadiationAbsorbtion: radiationIntensity, unitAbsorbtionValue
+
+All these measurements except
+year, month and radiationIntensity should be of type double .
+“radiationIntensity” is an enum class containing these three fixed values: “low”, “ medium ”, “high”
+
+Measurements inside their objects should be randomly initialized according to the ranges given below:
+-2020 <= year <= 2022
+-January <= month <= December
+-40.0 <= celciusMeasurement <= 50.0
+-fahrenheitMeasurement: This should be converted from celciusMeasurement.
+-kelvinMeasurement:kelvinMeasurement: This should be converted from celciusMeasurement.This should be converted from celciusMeasurement.
+-0.00.0 <= <= metersPerSecond <= 113.2metersPerSecond <= 113.2
+-kmPerHour: This should be converted from metersPerSecond.kmPerHour: This should be converted from metersPerSecond.
+-0.00.0 <= <= humidityPercentage <= 100.0humidityPercentage <= 100.0
+-5.05.0 <= <= unitAbsorbtionValue <= 20.0unitAbsorbtionValue <= 20.0
+
+locations:
+measurements (ArrayList objects that consist of the measurement objects)
+
+countries
+The climate data of countries are used for calculating the followings:
+country wide temperature statistics
+
+cities
+felt temperature
+
+the data of cities are used for calculating the folowings:
+useful statistics with the 4 measurement types for their respective city.
+
+
+
+
+
+
