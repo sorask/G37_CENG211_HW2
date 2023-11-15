@@ -1,20 +1,22 @@
 package measurements;
 
-import measurements.City;
+import java.util.ArrayList;
 
-public class Country {
-	private String name;
-	private City[] cities;
+public class Country extends Location{
+	
+	public static final int COUNTRY_COUNT = 5;
+	private ArrayList<ClimateMeasurement> measurements;
 
+    public Country(String name) {
+        super(name);
+        this.measurements = new ArrayList<>();
+    }
+    
 	public String getName() {
-		return name;
-	}
-
-	public City[] getCities() {
-		return cities;
+		return super.getName();
 	}
 	
-	public void setCities(City[] cities) {
-		this.cities=cities;
-	}
+    public ArrayList<ClimateMeasurement> getMeasurements() {
+        return measurements;
+    }
 }

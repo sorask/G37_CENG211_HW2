@@ -1,17 +1,21 @@
 package measurements;
 
-import measurements.Country;
+import java.util.ArrayList;
 
-public class City {
-	private String name;
-	private Country country;
-	
-	public City(String name, Country country) {
-		this.name=name;
-		this.country = country;
-	}
+public class City extends Location{
+    public static final int CITY_COUNT = 3;
+    private ArrayList<ClimateMeasurement> measurements;
 
-	public String getName() {
-		return name;
-	}
+    public City(String name) {
+        super(name);
+        this.measurements = new ArrayList<>();
+    }
+
+    public String getName() {
+        return super.getName();
+    }
+
+    public ArrayList<ClimateMeasurement> getMeasurements() {
+        return measurements;
+    }
 }
